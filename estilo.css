@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+.menu {
+    background: #222;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo {
+    height: 50px;
+    margin: 10px;
+}
+
+/* Solo el primer nivel del menú es flex */
+.menu > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 20px 18px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.menu ul li a:hover {
+    background: #444;
+}
+
+/* SUBMENÚ */
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #333;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 10;
+    padding: 0;
+}
+
+.submenu li a {
+    padding: 12px 18px;
+    white-space: nowrap;
+}
+
+/* Mostrar submenú solo al pasar el mouse o enfocar */
+.submenu-parent:hover > .submenu,
+.submenu-parent:focus-within > .submenu {
+    display: flex;
+}
+
+/* Carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    background: #ddd;
+    margin-bottom: 30px;
+}
+
+.carousel .slides {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.carousel img {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100vw); }
+    66% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 300px;
+    padding: 18px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+}
+
+.footer-img {
+    height: 24px;
+    vertical-align: middle;
+}

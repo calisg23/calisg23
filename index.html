@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GYM Inclusivo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menú principal -->
+    <nav class="menu">
+        <img src="images/logo.png" alt="Logo Gym" class="logo">
+<!-- Ejemplo correcto de menú con submenú -->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quienes somos</a></li>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Nuestros locales</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li class="submenu-parent">
+                <a href="#">Programa</a>
+                <ul class="submenu">
+                    <li><a href="#">Principiantes</a></li>
+                    <li><a href="#">Pérdida de peso</a></li>
+                    <li><a href="#">Ganancia muscular</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vida sana</a></li>
+        </ul>
+
+
+
+    </nav>
+
+    <!-- Carrusel -->
+    <section class="carousel">
+        <div class="slides">
+            <img src="images/carousel1.jpg" alt="Personas entrenando juntas">
+            <img src="images/carousel2.jpg" alt="Entrenamiento inclusivo">
+            <img src="images/carousel3.jpg" alt="Hombres y mujeres en el gym">
+        </div>
+    </section>
+
+    <!-- Tarjetas de programas/campañas/ofertas -->
+    <section class="cards">
+        <div class="card">
+            <img src="images/recommendation1.jpg" alt="Entrenamiento para todos">
+            <h3>Campaña Inclusiva</h3>
+            <p>Programas para hombres y mujeres de todas las edades y niveles.</p>
+        </div>
+        <div class="card">
+            <img src="images/recommendation2.jpg" alt="Oferta especial">
+            <h3>Oferta de Verano</h3>
+            <p>Descuentos especiales en membresías familiares e individuales.</p>
+        </div>
+        <div class="card">
+            <img src="images/inclusivity1.jpg" alt="Entrenamiento grupal">
+            <h3>Curso de Vida Sana</h3>
+            <p>Aprende sobre nutrición y bienestar con nuestros expertos.</p>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video-section">
+        <h2>¡Mira cómo es nuestro gimnasio!</h2>
+        <video controls width="600">
+            <source src="videos/gym-video1.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GYM Inclusivo. Todos los derechos reservados.</p>
+        <p>Hombres y mujeres bienvenidos. <img src="images/inclusivity2.jpg" alt="Inclusividad" class="footer-img"></p>
+    </footer>
+</body>
+</html>
